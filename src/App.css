@@ -1,79 +1,72 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f8f9fa;
-}
-
-.app-container {
-    max-width: 700px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: white;
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-family: "Segoe UI", sans-serif;
+    background: #f9f9f9;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.title {
+h1 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.mode-selector {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-select {
-    padding: 0.5rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    color: #333;
 }
 
 textarea {
     width: 100%;
-    padding: 1rem;
+    height: 120px;
+    padding: 12px;
+    font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
-    margin-bottom: 1rem;
-    font-size: 1rem;
     resize: vertical;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+select,
+input[type="checkbox"] {
+    padding: 8px;
+    font-size: 1rem;
 }
 
 button {
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    background-color: #007bff;
+    padding: 10px 24px;
+    background-color: #4caf50;
     color: white;
+    font-size: 1rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 button:disabled {
-    background-color: #6c757d;
+    background-color: #aaa;
     cursor: not-allowed;
 }
 
-.output-section {
+.output {
     margin-top: 2rem;
 }
 
-.output-section h2 {
-    background: #d0e8ff;
-    padding: 0.5rem;
-    border-radius: 6px;
+pre {
+    white-space: pre-wrap;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
-.output-section pre {
-    background: #f1f1f1;
-    padding: 1rem;
-    white-space: pre-wrap;
-    border-radius: 6px;
-    font-family: 'Courier New', monospace;
-    max-height: 400px;
-    overflow: auto;
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
